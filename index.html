@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;800&display=swap">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(218, 23%, 16%);
+      height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container {
+      border-radius: 15px;
+      width: 540px;
+      height: 330px;
+      background-color: hsl(217, 19%, 24%);
+      padding: 20px;
+      display: flex;
+      box-sizing: border-box;
+      display: grid;
+      place-items: center;
+    }
+
+/* Gaya untuk class title */
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      font-family: Manrope, sans-serif;
+      color: hsl(150, 100%, 66%);
+      letter-spacing: 5px;
+    }
+
+/* Gaya untuk class quote */
+    .quote {
+     font-size: 28px;
+     color: hsl(193, 38%, 86%);
+     font-family: Manrope, sans-serif;
+     font-weight: 800;
+     text-align: center;
+     width: 450px;
+    }
+
+    .dice{
+      height: 65px;
+      width: 65px;
+      border-radius: 50%;
+      background-color: hsl(150, 100%, 66%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 25px;
+    }
+
+    .dice:hover{
+      box-shadow: 0 0 30px hsl(150, 100%, 66%);
+    }
+
+    .line{
+      margin-top: 15px;
+    }
+
+    .line-mbl{
+      display: none;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media (max-width: 480px) {
+      body{
+        padding-left: 25px;
+        padding-right: 25px;
+        box-sizing: border-box;
+        overflow: scroll;
+        flex-direction: column;
+        display: flex;
+      }
+
+      .container {
+      width: 100%;
+      max-width: 370px;
+      height: 315px;
+      justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .quote{
+      width: 300px;
+      font-size: 24px;
+      margin-top: 15px;
+    }
+
+    .line{
+      display: none;
+    }
+    .line-mbl{
+      display: flex;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="container">
+    <p class="title">ADVICE #117</p>
+    <p class="quote">"It is easy to sit up and take notice, what's difficult is getting
+up and taking action."</p>
+    <div class="line">
+      <img src="images/pattern-divider-desktop.svg" alt="line">
+    </div>
+    <div class="line-mbl">
+      <img src="images/pattern-divider-mobile.svg" alt="line">
+    </div>
+    <div class="dice">
+      <img src="images/icon-dice.svg" alt="dice">
+    </div>
+    
+  </div>
+  
+</body>
+</html>
